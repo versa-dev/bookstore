@@ -12,9 +12,7 @@ class ProductTag(models.Model):
     slug = models.SlugField(max_length=48)
     description = models.TextField(blank=True)
     active = models.BooleanField(default=True)
-
     objects = ProductTagManager()
-
     def __str__(self):
         return self.name
 
